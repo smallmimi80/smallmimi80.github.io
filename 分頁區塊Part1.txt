@@ -1,0 +1,534 @@
+<!-- 分頁區塊Swiper 第一版20181201--> 
+
+<div class="swiper-container gallery-top">
+            <div class="swiper-container gallery-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">麵包專區</div>
+                <div class="swiper-slide">蛋糕專區</div>
+                <div class="swiper-slide">輕食專區</div>
+                <div class="swiper-slide">飲品專區</div>
+              </div>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <!-- 麵包品項區塊 -->
+                <section id="menubread" class="container">
+                  <div class="row justify-center-around">
+                    <div class="col-12 col-md-4">
+                      <img src="./01-image/bread.jpg" alt="bread" />
+                    </div>
+                    <div class="col-12 col-md-8">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                      <span>這裡是價格</span>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <img src="./01-image/bread2.jpg" alt="bread2" />
+                    </div>
+                    <div class="col-12 col-md-8">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                      <span>這裡是價格</span>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <img src="./01-image/bread3.jpg" alt="bread3" />
+                    </div>
+                    <div class="col-12 col-md-8">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                      <span>這裡是價格</span>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <img src="./01-image/bread4.jpg" alt="bread4" />
+                    </div>
+                    <div class="col-12 col-md-8">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                      <span>這裡是價格</span>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="swiper-slide">
+                 <!-- 蛋糕品項區塊 -->
+                 <section id="menucake" class="container">
+                    <div class="row justify-center-around">
+                        <div class="col-12 col-md-4">
+                            <img src="./01-image/cake.jpg" alt="cake">
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolore iure
+                                vitae?
+                                Laudantium vitae temporibus praesentium, numquam quam illum sit dolor
+                                voluptatibus
+                                cumque
+                                eligendi perferendis ea, architecto eos expedita aut?</p>
+                            <span>這裡是價格</span>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="./01-image/cake1.jpg" alt="cake1">
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolore iure
+                                vitae?
+                                Laudantium vitae temporibus praesentium, numquam quam illum sit dolor
+                                voluptatibus
+                                cumque
+                                eligendi perferendis ea, architecto eos expedita aut?</p>
+                            <span>這裡是價格</span>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="./01-image/cake2.jpg" alt="cake2">
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolore iure
+                                vitae?
+                                Laudantium vitae temporibus praesentium, numquam quam illum sit dolor
+                                voluptatibus
+                                cumque
+                                eligendi perferendis ea, architecto eos expedita aut?</p>
+                            <span>這裡是價格</span>
+                        </div>
+      
+                    </div>
+                </section>
+              </div>
+              <div class="swiper-slide">
+                <!-- 點心輕食品項區塊 -->
+                <section id="menulightfood" class="container">
+                    <div class="row justify-center-around">
+                        <div class="col-12 col-md-4">
+                            <img src="./01-image/salad1.jpg" alt="salad1">
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolore iure
+                                vitae?
+                                Laudantium vitae temporibus praesentium, numquam quam illum sit dolor
+                                voluptatibus
+                                cumque
+                                eligendi perferendis ea, architecto eos expedita aut?</p>
+                            <span>這裡是價格</span>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="./01-image/salad2.jpg" alt="salad2">
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolore iure
+                                vitae?
+                                Laudantium vitae temporibus praesentium, numquam quam illum sit dolor
+                                voluptatibus
+                                cumque
+                                eligendi perferendis ea, architecto eos expedita aut?</p>
+                            <span>這裡是價格</span>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="./01-image/pudding.jpg" alt="pudding">
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolore iure
+                                vitae?
+                                Laudantium vitae temporibus praesentium, numquam quam illum sit dolor
+                                voluptatibus
+                                cumque
+                                eligendi perferendis ea, architecto eos expedita aut?</p>
+                            <span>這裡是價格</span>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="./01-image/pudding2.jpg" alt="pudding2">
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolore iure
+                                vitae?
+                                Laudantium vitae temporibus praesentium, numquam quam illum sit dolor
+                                voluptatibus
+                                cumque
+                                eligendi perferendis ea, architecto eos expedita aut?</p>
+                            <span>這裡是價格</span>
+                        </div>
+                    </div>
+                </section>
+              </div>
+              <div class="swiper-slide">
+                <!-- 茶飲品項區塊 -->
+                <section id="menutea" class="container">
+                    <div class="row justify-center-around">
+                        <div class="col-12 col-md-4">
+                            <img src="./01-image/coffee1.jpg" alt="coffee1">
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolore iure
+                                vitae?
+                                Laudantium vitae temporibus praesentium, numquam quam illum sit dolor
+                                voluptatibus
+                                cumque
+                                eligendi perferendis ea, architecto eos expedita aut?</p>
+                            <span>這裡是價格</span>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="./01-image/coffee2.jpg" alt="coffee2">
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolore iure
+                                vitae?
+                                Laudantium vitae temporibus praesentium, numquam quam illum sit dolor
+                                voluptatibus
+                                cumque
+                                eligendi perferendis ea, architecto eos expedita aut?</p>
+                            <span>這裡是價格</span>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="./01-image/drink1.jpg" alt="drink1">
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolore iure
+                                vitae?
+                                Laudantium vitae temporibus praesentium, numquam quam illum sit dolor
+                                voluptatibus
+                                cumque
+                                eligendi perferendis ea, architecto eos expedita aut?</p>
+                            <span>這裡是價格</span>
+                        </div>
+                    </div>
+                </section>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+          </div>
+
+
+<!-- 分頁Initialize Swiper -->
+     <script>
+            var galleryThumbs = new Swiper(".gallery-thumbs", {
+              spaceBetween: 10,
+              slidesPerView: 4,
+              freeMode: true,
+              watchSlidesVisibility: true,
+              watchSlidesProgress: true
+            });
+            var galleryTop = new Swiper(".gallery-top", {
+              spaceBetween: 10,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+              },
+              thumbs: {
+                swiper: galleryThumbs
+              }
+            });
+          </script>
+
+
+<!-- 大分頁區塊 -->
+    <!-- <script>
+        var swiper = new Swiper('#swiper-container', {
+            pagination: '#swiper-pagination',
+            slidesPerView: 1,
+            paginationClickable: true,
+            loop: true,
+            paginationBulletRender: function (index, className) {
+                var tabsName = ['麵包專區', '蛋糕專區', '輕食專區', '飲品專區'];
+                if (index === (tabsName.length - 1)) {
+                    return '<span class="' + className + '">'
+                        + tabsName[index] + '</span>'
+                        + '<div class="active-mark "></div>';
+                }
+                return '<span class="' + className + '">' + tabsName[index] + '</span>';
+            }
+        });
+    </script> -->
+
+
+/*CSS*/
+
+
+.link {
+    color: yellow;
+    font-size: 18px;
+}
+
+.postition_fixed {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+}
+
+.clearfix {
+    clear: both;
+
+}
+#menubread {
+    position: relative;
+    z-index: 10;
+    color: black;
+}
+
+#menubread img {
+    width: 70%;
+    margin: 15px auto 0;
+}
+
+#menucake {
+    position: relative;
+    float: left 20;
+    z-index: 10;
+    color: black;
+}
+
+#menucake img {
+    width: 70%;
+    margin: 15px auto 0;
+}
+
+#menulightfood {
+    position: relative;
+    float: left 20;
+    z-index: 10;
+    color: black;
+}
+
+#menulightfood img {
+    width: 70%;
+    margin: 15px auto 0;
+}
+
+#menutea {
+    position: relative;
+    float: left 20;
+    z-index: 10;
+    color: black;
+}
+
+#menutea img {
+    margin: 15px auto 0;
+    width: 70%;
+
+}
+
+/**part1先前分頁/
+/* #swiper-slide-1{
+    background: #fff;
+    color: #333;
+    font-size: 1.8rem;
+    min-height: 300px;
+    padding-top: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#swiper-container-horizontal>#swiper-pagination {
+    top: 0;
+    bottom: auto;
+}
+
+#swiper-container-horizontal>#swiper-pagination #swiper-pagination-bullet {
+    margin: 0;
+}
+
+.active-mark {
+    background: #ffeb3b;
+    width: 25%;
+    height: 4px;
+    position: inherit;
+    left: 0;
+    top: 52px;
+    transition: left 0.2s ease-out;
+   
+}
+
+#swiper-pagination-bullet {
+    background-color: rgba(219, 77, 109, .8);
+    border-radius: 0;
+    box-sizing: border-box;
+    color:white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: normal;
+    opacity: 1;
+    height: 56px;
+    width: 25%;
+   
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: font-weight 0.22s ease;
+
+   
+}
+
+#swiper-pagination-bullet:nth-of-type(1)#swiper-pagination-bullet-active~#active-mark {
+    left: 0%;
+}
+
+#swiper-pagination-bullet:nth-of-type(2)#swiper-pagination-bullet-active~#active-mark {
+    left: 25%;
+}
+
+#swiper-pagination-bullet:nth-of-type(3)#swiper-pagination-bullet-active~#active-mark {
+    left: 50%;
+}
+
+#swiper-pagination-bullet:nth-of-type(4)#swiper-pagination-bullet-active~#active-mark {
+    left: 75%;
+}
+
+#swiper-pagination-bullet:first-of-type#swiper-pagination-bullet-active~#active-mark {
+    left: 0;
+}
+
+#swiper-pagination-bullet-active {
+    font-weight: bold;
+    
+} */
+
+ /* :root {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h1 {
+    color: #EFEFEF;
+    font-size: 3rem;
+    margin: 60px 0 0;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+@media screen and (max-width: 1200px) {
+    .intro h1 {
+        font-size: 4rem;
+    }
+}
+
+.intro p {
+    color: #E0CF79;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-top: 56px;
+}
+
+.intro a {
+    color: #40DFBB;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#swiper-container{
+    width: 100%;
+    height: 100%;
+   
+}
+
+@media screen and (max-width: 1200px) {
+    #swiper-container {
+        width: 70%;
+        margin-left: 15%;
+    }
+} */
+
+/*part1大分頁區塊*/
+
+/*大分頁區塊*/
+.swiper-container {
+    background-size: cover;
+    height: 80%;
+    /* width: 100%;
+    height: 300px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 1.8em;
+    background: #fff;
+    /* padding-top: 20px; */
+    color: rgba(230, 91, 36, 0.8);
+    margin-right: 10px;
+    line-height: 2;
+    height: auto;
+  }
+  .gallery-top {
+    height: 80%;
+    width: 100%;
+  }
+  .gallery-thumbs {
+    /* height: 10%; */
+    box-sizing: border-box;
+    /* padding: 10px 0; */
+    background-color: rgba(219, 77, 109, 0.8);
+    cursor: grab;
+  }
+  .gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+  .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+ 
+  #menubread {
+    position: relative; 
+    z-index: 10;
+    color: black;
+  }
+
+  #menubread img {
+    /* width: 70%;
+    margin: 15px auto 0; */
+    margin: 5px;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #menucake {
+    position: relative;
+    float: left 20;
+    z-index: 10;
+  }
+
+  #menucake img {
+    margin: 5px;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #menulightfood {
+    position: relative;
+    float: left 20;
+    z-index: 10;
+  }
+
+  #menulightfood img {
+    margin: 5px;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #menutea {
+    position: relative;
+    float: left 20;
+    z-index: 10;
+  }
+
+  #menutea img {
+    margin: 5px;
+    display: block;
+    width: 100%;
+    height: auto;
+  }

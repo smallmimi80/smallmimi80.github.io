@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    
+    <!-- Demo styles -->
+    <style>
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        /* color: #000; */
+        margin: 0;
+        padding: 0;
+      }
+      .swiper-wrapper {
+        transition-delay: 0.3s;
+      }
+      .swiper-container {
+        width: 500px;
+        height: 300px;
+        margin: 10px auto;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide:nth-child(2) {
+        background: #3183ff;
+        color: black;
+      }
+      .swiper-slide p {
+        transform: translateX(-200px);
+        opacity: 0;
+        transition: all 0.4s;
+      }
+      .ani-slide p {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      #menumimiplace {
+        padding-top: 80px;
+      }
+      /*服務據點區塊*/
+      #place {
+        text-align: center;
+      }
+      #place img {
+        width: 70%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="menumimiplace" class="container">
+      <div class="row justify-center-around">
+        <div id="place" class="col-12 col-md-4">
+          <img src="./01-image/Taiwanmap.png" alt="Taiwanmap" />
+          <area
+            shape="poly"
+            coords="279,376,280,378"
+            alt="Image Map"
+            style="outline:none;"
+            title="Image Map"
+          />
+        </div>
+        <div class="col-12 col-md-8">
+          <span>服務據點</span>
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><p>北部地區</p></div>
+              <div class="swiper-slide"><p>中部地區</p></div>
+              <div class="swiper-slide"><p>南部地區</p></div>
+              <div class="swiper-slide"><p>東部地區</p></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        /*lightbox圖片屬性  自己改的要放在原先的後面 才會覆蓋*/
+        // lightbox.option({
+        //     'resizeDuration': 200,
+        //     'wrapAround': true,
+        //     'albumLabel': "蛋糕 %1 of %2"
+        // })
+      </script>
+    
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        direction: "vertical",
+        followFinger: false,
+        speed: 800,
+        mousewheelControl: true,
+        pagination: ".swiper-pagination",
+        onInit: function(swiper) {
+          slide = swiper.slides.eq(0);
+          slide.addClass("ani-slide");
+        },
+        onTransitionStart: function(swiper) {
+          for (i = 0; i < swiper.slides.length; i++) {
+            slide = swiper.slides.eq(i);
+            slide.removeClass("ani-slide");
+          }
+        },
+        onTransitionEnd: function(swiper) {
+          slide = swiper.slides.eq(swiper.activeIndex);
+          slide.addClass("ani-slide");
+        }
+      });
+    </script>
+  </body>
+</html>

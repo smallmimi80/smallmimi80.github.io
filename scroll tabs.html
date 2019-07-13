@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Set height of body and the document to 100% */
+      body,
+      html {
+        /* height: 100%; */
+        margin: 0;
+        font-family: Arial;
+        position: relative;
+        background: white;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: white;
+        padding: 0;
+      }
+
+      /* Style tab links */
+      .tablink {
+        background-color: #555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+      }
+
+      .tablink:hover {
+        background-color: #777;
+      }
+
+      /* Style the tab content (and add height:100% for full page content) */
+      .tabcontent {
+        color: white;
+        display: none;
+        padding: 100px 20px;
+        height: 100%;
+      }
+
+      #menubread {
+        position: relative;
+        z-index: 10;
+        color: black;
+      }
+
+      #menubread img {
+        /* width: 70%;
+        margin: 15px auto 0; */
+        margin: 15px auto 0;
+        display: block;
+        width: 43%;
+        height: auto;
+      }
+
+      #menucake {
+        position: relative;
+        /* float: left 20; */
+        z-index: 10;
+        color: black;
+      }
+
+      #menucake img {
+        margin: 15px auto 0;
+        display: block;
+        width: 43%;
+        height: auto;
+      }
+
+      #menulightfood {
+        position: relative;
+        /* float: left 20; */
+        z-index: 10;
+        color: black;
+      }
+
+      #menulightfood img {
+        margin: 15px auto 0;
+        display: block;
+        width: 43%;
+        height: auto;
+      }
+
+      #menutea {
+        position: relative;
+        /* float: left 20; */
+        z-index: 10;
+        color: black;
+      }
+
+      #menutea img {
+        margin: 15px auto 0;
+        display: block;
+        width: 43%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="tablink" onclick="openPage('Bread', this, 'red')">
+      麵包專區
+    </button>
+    <button
+      class="tablink"
+      onclick="openPage('Cake', this, 'green')"
+      id="defaultOpen"
+    >
+      蛋糕專區
+    </button>
+    <button class="tablink" onclick="openPage('Lightfood', this, 'blue')">
+      輕食專區
+    </button>
+    <button class="tablink" onclick="openPage('Tea', this, 'orange')">
+      飲品專區
+    </button>
+
+    <div id="Bread" class="tabcontent">
+      <!-- 麵包品項區塊 -->
+      <section id="menubread" class="tabcontainer">
+        <div class="row justify-center-around">
+          <div class="col-12 col-md-4">
+            <img src="./01-image/bread.jpg" alt="bread" />
+          </div>
+          <div class="col-12 col-md-8">
+            <h3>韓式麵包</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+              dicta velit natus commodi, doloribus obcaecati veritatis quae.
+              Nemo iure commodi libero harum nostrum et architecto quisquam, ab
+              eveniet quos at.
+            </p>
+            <span>這裡是價格</span>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./01-image/bread2.jpg" alt="bread2" />
+          </div>
+          <div class="col-12 col-md-8">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <span>這裡是價格</span>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./01-image/bread3.jpg" alt="bread3" />
+          </div>
+          <div class="col-12 col-md-8">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <span>這裡是價格</span>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./01-image/bread4.jpg" alt="bread4" />
+          </div>
+          <div class="col-12 col-md-8">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <span>這裡是價格</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="Cake" class="tabcontent">
+      <!-- 蛋糕品項區塊 -->
+      <section id="menucake" class="tabcontainer">
+        <div class="row justify-center-around">
+          <div class="col-12 col-md-4">
+            <img src="./01-image/cake.jpg" alt="cake" />
+          </div>
+          <div class="col-12 col-md-8">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Inventore dolore iure vitae? Laudantium vitae temporibus
+              praesentium, numquam quam illum sit dolor voluptatibus cumque
+              eligendi perferendis ea, architecto eos expedita aut?
+            </p>
+            <span>這裡是價格</span>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./01-image/cake1.jpg" alt="cake1" />
+          </div>
+          <div class="col-12 col-md-8">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              
+            </p>
+            <span>這裡是價格</span>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./01-image/cake2.jpg" alt="cake2" />
+          </div>
+          <div class="col-12 col-md-8">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Inventore dolore iure vitae? Laudantium vitae temporibus
+              praesentium, numquam quam illum sit dolor voluptatibus cumque
+              eligendi perferendis ea, architecto eos expedita aut?
+            </p>
+            <span>這裡是價格</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="Lightfood" class="tabcontent">
+      <!-- 點心輕食品項區塊 -->
+      <section id="menulightfood" class="tabcontainer">
+        <div class="row justify-center-around">
+          <div class="col-12 col-md-4">
+            <img src="./01-image/salad1.jpg" alt="salad1" />
+          </div>
+          <div class="col-12 col-md-8">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Inventore dolore iure vitae? Laudantium vitae temporibus
+              praesentium, numquam quam illum sit dolor voluptatibus cumque
+              eligendi perferendis ea, architecto eos expedita aut?
+            </p>
+            <span>這裡是價格</span>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./01-image/salad2.jpg" alt="salad2" />
+          </div>
+          <div class="col-12 col-md-8">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Inventore dolore iure vitae? Laudantium vitae temporibus
+              praesentium, numquam quam illum sit dolor voluptatibus cumque
+              eligendi perferendis ea, architecto eos expedita aut?
+            </p>
+            <span>這裡是價格</span>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./01-image/pudding.jpg" alt="pudding" />
+          </div>
+          <div class="col-12 col-md-8">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Inventore dolore iure vitae? Laudantium vitae temporibus
+              praesentium, numquam quam illum sit dolor voluptatibus cumque
+              eligendi perferendis ea, architecto eos expedita aut?
+            </p>
+            <span>這裡是價格</span>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./01-image/pudding2.jpg" alt="pudding2" />
+          </div>
+          <div class="col-12 col-md-8">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Inventore dolore iure vitae? Laudantium vitae temporibus
+              praesentium, numquam quam illum sit dolor voluptatibus cumque
+              eligendi perferendis ea, architecto eos expedita aut?
+            </p>
+            <span>這裡是價格</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="Tea" class="tabcontent">
+      <!-- 茶飲品項區塊 -->
+      <section id="menutea" class="tabcontainer">
+        <div class="row justify-center-around">
+          <div class="col-12 col-md-4">
+            <img src="./01-image/coffee1.jpg" alt="coffee1" />
+          </div>
+          <div class="col-12 col-md-8">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Inventore dolore iure vitae? Laudantium vitae temporibus
+              praesentium, numquam quam illum sit dolor voluptatibus cumque
+              eligendi perferendis ea, architecto eos expedita aut?
+            </p>
+            <span>這裡是價格</span>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./01-image/coffee2.jpg" alt="coffee2" />
+          </div>
+          <div class="col-12 col-md-8">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Inventore dolore iure vitae? Laudantium vitae temporibus
+              praesentium, numquam quam illum sit dolor voluptatibus cumque
+              eligendi perferendis ea, architecto eos expedita aut?
+            </p>
+            <span>這裡是價格</span>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./01-image/drink1.jpg" alt="drink1" />
+          </div>
+          <div class="col-12 col-md-8">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Inventore dolore iure vitae? Laudantium vitae temporibus
+              praesentium, numquam quam illum sit dolor voluptatibus cumque
+              eligendi perferendis ea, architecto eos expedita aut?
+            </p>
+            <span>這裡是價格</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      function openPage(pageName, elmnt, color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>

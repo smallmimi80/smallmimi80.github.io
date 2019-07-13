@@ -1,0 +1,595 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing: border-box;
+  /*計算寬度時，包含padding*/
+}
+
+/*這裡是去邊框，圖片置上的內距為80px*/
+body,
+html {
+  margin: 0;
+  font-family: Arial;
+  position: relative;
+  background: #eee;
+  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+  font-family:"Satisfy", cursive;
+  font-size: 20px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* html,body {
+    position: relative;
+    height: 100%;
+    
+} */
+/*首頁輪播區塊*/
+.swiper-container {
+  max-width: 100%;
+  background-size: cover;
+  /* width: 100%; */
+  height: 100%;
+}
+.swiper-pagination-bullet{
+  /* opacity: 1; */
+  background:rgba(20, 13, 9, 0.8);
+}
+.swiper-button-next {
+  color: #ac06068e;
+  margin-right: 50px;
+}
+.swiper-button-prev {
+  color: #ffb5b5;
+  margin-left: 50px;
+}
+.swiper-slide {
+  text-align: center;
+  height: 100vh;
+  background-color: rgba(212, 209, 208, 0.8);
+}
+
+.swiper-slide img {
+  height: 100vh;
+}
+
+/*設定flex 位置固定套件*/
+.d-flex {
+  margin: 0;
+  justify-content: space-between;
+}
+
+/*navbar連結位置*/
+.sectionall {
+  display: block;
+}
+
+#menuactivity {
+  padding-top: 100px;
+}
+
+#menustory {
+  padding-top: 120px;
+}
+
+#menuhowtobakery {
+  padding-top: 120px;
+}
+
+#menumimibakery {
+  padding-top: 80px;
+  font-family:"Satisfy", cursive;
+}
+
+#menumimiplace {
+  padding-top: 80px;
+}
+
+#menumimicallus {
+  padding-top: 80px;
+}
+#menumimicallus#callus {
+  text-align: center;
+}
+/*米米活動區塊*/
+.container .activity {
+  display: block;
+  position: relative;
+  background-color: rgba(20, 13, 9, 0.8);
+  font-family: "Satisfy", cursive;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+/*米米故事區塊*/
+.container .story {
+  display: block;
+  position: relative;
+  background-color: rgba(20, 13, 9, 0.8);
+  font-family: "Satisfy", cursive;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+
+/*烘培知多少區塊*/
+.container .howto {
+  display: block;
+  position: relative;
+  background-color: rgba(20, 13, 9, 0.8);
+  font-family: "Satisfy", cursive;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+
+.container .easyrecipe {
+  display: block;
+  position: relative;
+  background-color: rgba(20, 13, 9, 0.8);
+  font-family: "Satisfy", cursive;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+
+/*烘培知多少區塊*/
+.tabs {
+  display: none;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 0px solid #ddd;
+  /* background-color: yellow;
+    width: 100px;
+    height: 50px; */
+}
+
+.show {
+  display: block;
+}
+
+.tabs_btn {
+  justify-content: space-between;
+  font-family: "Satisfy", cursive;
+  font-size: 20px;
+}
+.tabs_btn #tab1_btn {
+  width: 23%;
+  background-color: #ffb5b5;
+}
+.tabs_btn #tab2_btn {
+  width: 23%;
+  background-color: #ffb5b5;
+}
+.tabs_btn #tab3_btn {
+  width: 23%;
+  background-color: #ffb5b5;
+}
+.tabs_btn #tab4_btn {
+  width: 23%;
+  background-color: #ffb5b5;
+}
+.bg-img {
+  background-size: cover;
+  height: auto;
+  background-position: center;
+}
+/*簡易食譜區塊*/
+#recipe1 {
+  width: 100%;
+}
+/*swiper 大分頁區塊*/
+/****菜單品項區塊*/
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#menubread {
+  position: relative;
+  z-index: 10;
+  color: black;
+}
+
+#menubread img {
+  /* width: 70%;
+    margin: 15px auto 0; */
+  margin: 15px auto 0;
+  display: block;
+  width: 43%;
+  height: auto;
+}
+
+#menucake {
+  position: relative;
+  /* float: left 20; */
+  z-index: 10;
+  color: black;
+}
+
+#menucake img {
+  margin: 15px auto 0;
+  display: block;
+  width: 43%;
+  height: auto;
+}
+
+#menulightfood {
+  position: relative;
+  /* float: left 20; */
+  z-index: 10;
+  color: black;
+}
+
+#menulightfood img {
+  margin: 15px auto 0;
+  display: block;
+  width: 43%;
+  height: auto;
+}
+
+#menutea {
+  position: relative;
+  /* float: left 20; */
+  z-index: 10;
+  color: black;
+}
+
+#menutea img {
+  margin: 15px auto 0;
+  display: block;
+  width: 43%;
+  height: auto;
+}
+
+/*服務據點區塊*/
+#place {
+  text-align: center;
+}
+#place img{
+  width: 70%; 
+  height: auto;
+}
+
+/*聯絡我們*/
+#callus {
+  text-align: center;
+}
+/*這裡是gototop*/
+.postition_fixed {
+  position: fixed;
+  /* padding-top: 200px;  */
+  z-index: 10;
+  right: 30px;
+  bottom: 10px;
+}
+.postition_fixed i{
+  position: sticky;
+}
+/*footer區塊*/
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(116, 108, 110);
+}
+#footer #p1 {
+  color: rebeccapurple;
+}
+
+#footer .look .a {
+  color: white;
+}
+#look {
+  text-align: center;
+  
+  
+}
+
+/*選單列*/
+.navbar {
+  /*height:120px; 不行設定高度鎖死*/
+  background-color: rgb(202, 187, 192);
+  padding: 15px 0;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 12;
+  /*因為被定選 若數值一開始都沒有加預設直是0 只要設定比0大就會像圖層概念變置上*/
+}
+
+.navbar.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+/*選單列logo區*/
+nav.navbar .logo {
+  height: 50px;
+}
+
+nav.navbar .logo.small-logo {
+  height: 30px;
+  transform: 0.3s;
+}
+
+/*選單列版型*/
+nav .nav-items {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*選單列名稱 各項目屬性*/
+nav .nav-items li {
+  padding: 10px;
+  /*項目間隔10px*/
+}
+
+/**選單列名稱 各項目屬性 名子*/
+nav .nav-items li a {
+  text-decoration: none;
+  font-family: "Satisfy", cursive;
+  /*字體樣式 查google Fonts中文字型*/
+  font-size: 18px;
+  color: white;
+}
+
+nav .navbartitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgba(231, 231, 231, 1);
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: rgb(32, 31, 31);
+  color: rgb(201, 107, 107);
+}
+
+.box {
+    width: 33.33%;
+    float: left;
+    padding: 20px;
+}
+
+nav .container {
+  max-width: 1200px;
+  /*最大寬度設定*/
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.mobile-nav-toggle {
+  display: none;
+  /* float: right; */
+  border: 3px none black;
+}
+
+.mobile-nav-toggle i {
+  color:rgba(231, 231, 231, 1);
+  font-size: 24px;
+}
+
+.mobile-navbar {
+  display: none;
+  border-top: 1px solid white;
+  background-color:rgba(231, 231, 231, 1);
+  padding: 40px 0;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 12;
+}
+
+/*同時有這兩個class的時候*/
+.mobile-navbar.active {
+  display: none;
+}
+
+.mobile-navbar a {
+  display: block;
+  color: rgb(105, 105, 105);
+  padding: 8px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 35px;
+  font-family: "Satisfy", cursive;
+  /*字體樣式 查google Fonts中文字型*/
+}
+
+.box-flex {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.box-flex img:hover {
+  background-color: rgba(231, 231, 231, 1);
+  color: white;
+  opacity: 0.5;
+  /*判斷滑鼠的動作增加透明度*/
+}
+
+/*轉場的時間*/
+.box-flex img {
+  transition: all 0.5s ease 0s;
+}
+
+.box-items1 {
+  display: block;
+  position: relative;
+  background-color: gray;
+  font-family: "Satisfy", cursive;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer; /*滑鼠指標樣式*/
+  text-align: center;
+  z-index: 10;
+  width: 25%;
+  /* top: 77px;
+    left: 0;
+    width: 100%; */
+}
+
+.box-items1 img {
+  width: 100%;
+  height: calc(100vh - 106px);
+}
+
+@media screen and (max-width: 1200px) {
+  /*螢幕尺寸小於1200px時，套用以下css*/
+  .box-items1 {
+    width: 25%;
+  }
+  .logo{
+    float:none;
+  }
+  .howto{
+    width: 25%;
+  }
+  .easyrecipe{
+    width: 25%;
+  }
+}
+
+/*平板*/
+@media screen and (max-width: 1024px) {
+  /*螢幕尺寸小於1024px時，套用以下css*/
+  .box-items1 {
+    width: 50%;
+  }
+  .howto{
+    width: 100%;
+  }
+  .easyrecipe{
+    width: 100%;
+  }
+}
+
+/*手機板的CSS*/
+@media screen and (max-width: 768px) {
+  /*螢幕尺寸小於768px時，套用以下css*/
+  .box-items1 {
+    width: 100%;
+  }
+  .howto{
+    width: 100%;
+  }
+  .easyrecipe{
+    width: 100%;
+  }
+  #tab3_content iframe {
+    width: 350px;
+  }
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  /*同時有這兩個class的時候*/
+  .mobile-navbar.active {
+    display: block;
+  }
+
+  nav .nav-items {
+    display: none;
+  }
+
+  #close-absolute.show {
+    display: block;
+  }
+ #closebutton{
+  top: 30px;
+  left: 40px;
+  position: absolute;
+ }
+  .c1-all{
+    top: 80px;
+    justify-content:center;
+    position: relative;
+  }
+  #mobile-navbar.active {
+    display: block;
+  }
+
+  .mobile-toggle {
+    /* width: 10%;
+    position: fixed;
+    top: 10px;
+    right: 10px; */
+    /* display: none; */
+    right: 22px;
+    width: 30px;
+    top: 28px;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    transition: all 200ms ease-in;/*轉場*/
+  }
+  .mobile-toggle span {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    border-radius: 1000px;
+    background: #eee;
+    display: block;
+}
+  .logo {
+    width: 50%;
+    height: 50px;
+    display: none;
+  }
+  .logo-mi{
+    width: 50%;
+    height: 50px;
+  }
+  .tabs_btn #tab1_content {
+    display: block;
+  }
+  .tab3_content.tab3_video{
+    width: 350px;
+    height: 315px;
+  }
+  /* body {
+        padding-top: 180px;
+    } */
+}

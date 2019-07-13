@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing: border-box;
+  /*計算寬度時，包含padding*/
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*h1, h2, h3, h4, h5, h6,*/
+html, body, div, span, applet, object, iframe,
+ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* body {
+	line-height: 1;
+} */
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  color: #aabdcd;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+  height: 800px;
+}
+
+.head_banner_title {
+  text-align: center;
+}
+/*nav_about start*/
+.navbar {
+  /* background-color:  rgb(228, 228, 247); */
+  padding: 10px 0;
+  position: fixed;
+  font-family: "Nunito", sans-serif;
+  top: 0px;
+  width: 100%;
+  z-index: 13;
+  /*因為被定選 若數值一開始都沒有加預設直是0 只要設定比0大就會像圖層概念變置上*/
+}
+
+.navbar.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+nav .nav-items {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-items a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: rgb(118, 80, 129);
+}
+nav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.mobile-nav-toggle {
+  display: none;
+  border: 3px none rgb(228, 228, 247);
+}
+.mobile-toggle {
+  right: 22px;
+  width: 30px;
+  top: 28px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  transition: all 200ms ease-in; /*轉場*/
+}
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #eee;
+  display: block;
+}
+/*section_about start*/
+.section_parallax {
+  text-align: center;
+}
+.bg-parallax {
+  height: 60vh;
+  background-image: url("/01-image/parallax01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.bg-parallax2 {
+  height: 250px;
+  background-color: rgb(228, 228, 247);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.bg-parallax3 {
+  height: 800px;
+  background-image: url("/01-image/parallax02.jpg");
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.box_a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+  letter-spacing: 3px;
+}
+.about_slogan_1 {
+  font-size: 26px;
+  color: #ffffff;
+  vertical-align: baseline;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+.about_slogan_2 {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  outline: 0px;
+  font-size: 20px;
+  vertical-align: baseline;
+  color: #382e8d;
+  font-family: "Nunito", sans-serif;
+  line-height: 30px;
+  text-align: center;
+}
+
+/*New product_about*/
+.row img{
+  z-index: 12;
+  border-style: dashed;
+  justify-content: center;
+}
+.row{
+  margin-left:1%;
+}
+.new-product{
+  font-size: 40px;
+  width: 600px;
+}
+.new-product li{
+  float:left;
+  width: 148px;
+  height: 200px;
+  border: 1px solid #4e4f53;
+}
+#earring-all{
+    padding: 100px 5%;
+    display: block;
+    position: relative;
+    z-index: 12;
+    background-color: rgba(255, 243, 236, 0.8);
+    font-family: "Satisfy", cursive;
+    font-size: 20px;
+    color: rgb(118, 80, 129);
+    text-align: center;
+    
+}
+
+/*Hot product about*/
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+transition: 300ms;
+}
+.swiper-slide:not(.swiper-slide-active){
+  transform: scale(0.8);
+}
+
+
+/*footer_about*/
+#footer-list {
+  font-size: 20px;
+  color: #4e4f53;
+  vertical-align: baseline;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  opacity: 0.7;
+  background-color: rgb(255, 184, 255);
+}
+#Future{
+  /* padding: 50px 1%; */
+}
+/*media all*/
+@media only screen and (max-width: 1280px) {
+
+}
+/*平板*/
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+  a {
+    color:rgb(118, 80, 129);
+    transition: all 1000ms linear;
+}
+  .mobile-nav-toggle {
+    display: block;
+  }
+  
+  /*同時有這兩個class的時候*/
+  .mobile-navbar.active {
+    display: block;
+  }
+
+  nav .nav-items {
+    display: none;
+  }
+  
+  .mobile-list{
+    position: fixed;
+    /* max-height: 70px; */
+    width: 100%;
+    padding-top: 25px;
+    z-index: 12;
+    display: none;
+    overflow: hidden;
+    transition: all 0.3s;
+    opacity: 0.8;
+    top: -70px;
+    padding-bottom: 6px;
+    
+  }
+  .mobile-toggle {
+    right: 35px;
+    width: 30px;
+    top: 28px;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    transition: all 200ms ease-in; /*轉場*/
+    display: block;
+  }
+  .mobile-toggle span {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    border-radius: 1000px;
+    background: #eee;
+    display: block;
+  }
+  #mobile-list.show{
+    top: 70px;
+    justify-content:center;
+    position: relative;
+    display: contents;
+  }
+  #mobile-list ul li{
+    padding-top: 0px;
+    margin-bottom: 10px;
+    margin-top:10px;
+    float: left;
+    text-align: center;
+    list-style: none;
+    width:100%;
+    /* display: inline-block; */
+  }
+  .logo {
+    width: 50%;
+    height: 50px;
+    display: none;
+  }
+  .logo-mi {
+    width: 50%;
+    height: 50px;
+  }
+}
